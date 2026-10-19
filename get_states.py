@@ -1,4 +1,4 @@
-from x import X,SameX
+from x import X
 from pprint import pprint
 import os
 
@@ -20,7 +20,7 @@ if __name__=="__main__":
         X+X,
         X**X**X,
         X**X + X**X,
-        X + SameX,
+        X + X,
         X + X**X + X**X**X + X**X**X**X
     ]
     actual_index = 2
@@ -36,7 +36,7 @@ if __name__=="__main__":
         ],
         [3,1,1],
         [3,2,4,2],
-        [3],
+        [3,3],
         [1,1,1,1,1,1,1,1,1,1]
     ]
     answer = get_final_state_of_universal_function(sqr[0],input_state[0])
